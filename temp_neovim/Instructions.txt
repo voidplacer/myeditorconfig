@@ -1,0 +1,11 @@
+sudo dnf install clang-tools-extra
+sudo apt install clang-format
+
+For Allman Indentation Style in C/C++
+Simply put the .clang-format file in the home directory (~/.) or the specific project directory
+
+For Allman Indentation Style in Java
+Simply put the .clang-format file in the home directory (~/.) or the specific project directory
+then put conform.lua in ~/.config/nvim/lua/plugins/conform.lua
+put noice.lua in ~/.config/nvim/lua/plugins/noice.lua
+put keymaps.lua in ~/.config/nvim/lua/config/keymaps.lua
