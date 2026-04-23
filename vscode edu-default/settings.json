@@ -1,0 +1,29 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "top",
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "vim.smartRelativeLine": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "vim.useSystemClipboard": true,
+    "redhat.telemetry.enabled": false,
+    "window.commandCenter": false,
+    "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font",
+    "editor.stickyScroll.enabled": false,
+
+    "editor.quickSuggestions":
+    {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.wordBasedSuggestions": false,
+    "editor.parameterHints.enabled": false,
+    "editor.inlineSuggest.enabled": false
+}

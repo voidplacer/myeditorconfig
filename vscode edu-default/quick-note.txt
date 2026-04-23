@@ -1,0 +1,16 @@
+Edu-Default has all Auto Suggestions Disabled
+
+To re-enable back, simple copy~paste the VSCode-Default config file, or comment out the following
+
+
+//  "editor.quickSuggestions":
+//  {
+//      "other": false,
+//      "comments": false,
+//      "strings": false
+//  },
+//  "editor.suggestOnTriggerCharacters": false,
+//  "editor.acceptSuggestionOnEnter": "off",
+//  "editor.wordBasedSuggestions": false,
+//  "editor.parameterHints.enabled": false,
+//  "editor.inlineSuggest.enabled": false
