@@ -9,6 +9,7 @@
       "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-shift-i": "workspace::NewCenterTerminal",
       "alt-enter": "pane::SplitHorizontal",
-      "alt-\\": "pane::SplitVertical"
-    }
+      "alt-\\": "pane::SplitVertical",
+    },
+  },
 ]
