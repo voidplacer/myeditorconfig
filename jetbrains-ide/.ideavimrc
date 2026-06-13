@@ -1,0 +1,24 @@
+set number
+set relativenumber
+set scrolloff=5
+set incsearch
+set hlsearch
+set clipboard+=unnamedplus
+
+set surround
+set commentary
+set easymotion
+
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'easymotion/vim-easymotion'
+
+"Vim motions movement using CTRL + H J K L"
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+"Split creation using CTRL + \ and Enter. IDE Mapping required"
+nnoremap <C-\> :vsplit<CR>
+nnoremap <C-CR> :split<CR>
