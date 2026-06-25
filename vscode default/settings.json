@@ -1,4 +1,5 @@
 {
+    // Standard UI/Visual Component
     "workbench.startupEditor": "none",
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "catppuccin-mocha",
@@ -16,22 +17,31 @@
     "editor.stickyScroll.enabled": false,
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
+
+    // Lang Specific
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "java.jdt.ls.vmargs": "-Xms2G -Xmx5G -XX:+UseG1GC -XX:+UseStringDeduplication",
+    // Java CP   /*Comment out/Enable if working in a project*/
+    "java.import.gradle.enabled": false,
+    "java.import.maven.enabled": false,
     
+    // Fetch optimization
     "files.watcherExclude": {
         "**/.git/objects/**": true,
         "**/node_modules/**": true,
         "**/dist/**": true,
         "**/build/**": true,
-        "**/.cache/**": true
+        "**/.cache/**": true,
+        "**/target/**": true
     },
-    
     "search.exclude": {
         "**/node_modules": true,
         "**/build": true
     },
-    
+
+    // Smooth Behavior
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
-    "editor.cursorBlinking": "smooth",
+    "editor.cursorBlinking": "smooth"
 }

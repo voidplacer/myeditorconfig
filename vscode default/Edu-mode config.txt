@@ -1,0 +1,10 @@
+Add the following lines in settings.json [command palette: user json] to disable all Auto Suggestions in VS Code.
+
+Note: Add inside braces { }
+
+"editor.quickSuggestions":
+{
+    "other": false,
+    "comments": false,
+    "strings": false
+}
