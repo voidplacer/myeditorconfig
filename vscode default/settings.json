@@ -15,7 +15,7 @@
     "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
     "editor.stickyScroll.enabled": false,
     "telemetry.telemetryLevel": "off",
-    "workbench.enableExperiments": false
+    "workbench.enableExperiments": false,
     
     "files.watcherExclude": {
         "**/.git/objects/**": true,
