@@ -12,18 +12,33 @@
     "vim.useSystemClipboard": true,
     "redhat.telemetry.enabled": false,
     "window.commandCenter": false,
-    "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font",
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
     "editor.stickyScroll.enabled": false,
-
+    "telemetry.telemetryLevel": "off",
+    "workbench.enableExperiments": false
+    
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true,
+        "**/dist/**": true,
+        "**/build/**": true,
+        "**/.cache/**": true
+    },
+    
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/build": true
+    },
+    
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    
     "editor.quickSuggestions":
     {
         "other": false,
         "comments": false,
         "strings": false
-    },
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.wordBasedSuggestions": false,
-    "editor.parameterHints.enabled": false,
-    "editor.inlineSuggest.enabled": false
+    }
 }
