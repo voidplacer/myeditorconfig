@@ -1,0 +1,81 @@
+[
+  // --- Move between splits ---
+  { "key": "ctrl+h", "command": "workbench.action.navigateLeft" },
+  { "key": "ctrl+l", "command": "workbench.action.navigateRight" },
+  { "key": "ctrl+k", "command": "workbench.action.navigateUp" },
+  { "key": "ctrl+j", "command": "workbench.action.navigateDown" },
+
+  // --- Resize splits ---
+  // When in the LEFT split (Group 1)
+  { 
+    "key": "alt+h", 
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "activeEditorGroupIndex == 1"
+  },
+  { 
+    "key": "alt+l", 
+    "command": "workbench.action.increaseViewWidth",
+    "when": "activeEditorGroupIndex == 1"
+  },
+
+  // When in the RIGHT split (Group 2 or higher)
+  { 
+    "key": "alt+h", 
+    "command": "workbench.action.increaseViewWidth",
+    "when": "activeEditorGroupIndex > 1"
+  },
+  { 
+    "key": "alt+l", 
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "activeEditorGroupIndex > 1"
+  },
+  { "key": "alt+k", "command": "workbench.action.decreaseViewHeight" },
+  { "key": "alt+j", "command": "workbench.action.increaseViewHeight" },
+
+  // --- Move between tabs (1 to 9) ---
+  { "key": "alt+1", "command": "workbench.action.openEditorAtIndex1" },
+  { "key": "alt+2", "command": "workbench.action.openEditorAtIndex2" },
+  { "key": "alt+3", "command": "workbench.action.openEditorAtIndex3" },
+  { "key": "alt+4", "command": "workbench.action.openEditorAtIndex4" },
+  { "key": "alt+5", "command": "workbench.action.openEditorAtIndex5" },
+  { "key": "alt+6", "command": "workbench.action.openEditorAtIndex6" },
+  { "key": "alt+7", "command": "workbench.action.openEditorAtIndex7" },
+  { "key": "alt+8", "command": "workbench.action.openEditorAtIndex8" },
+  { "key": "alt+9", "command": "workbench.action.openEditorAtIndex9" },
+
+  // --- Move 1 tab left or right ---
+  { "key": "ctrl+shift+h", "command": "workbench.action.previousEditor" },
+  { "key": "ctrl+shift+l", "command": "workbench.action.nextEditor" },
+
+  // --- Create splits ---
+  // Note: Alt+\ splits vertically (right), Alt+Enter splits horizontally (down)
+  { "key": "alt+\\", "command": "workbench.action.newGroupRight" },
+  { "key": "alt+enter", "command": "workbench.action.newGroupBelow" },
+
+  // --- New tab / Close tab ---
+  { "key": "ctrl+t", "command": "workbench.action.files.newUntitledFile" },
+  { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor" },
+
+  // --- Terminal focus toggle ---
+  // If not in terminal, jump to terminal. If in terminal, jump to code editor.
+  { 
+    "key": "ctrl+shift+i", 
+    "command": "workbench.action.terminal.focus", 
+    "when": "!terminalFocus" 
+  },
+  { 
+    "key": "ctrl+shift+i", 
+    "command": "workbench.action.focusActiveEditorGroup", 
+    "when": "terminalFocus" 
+  },
+
+  // --- Search for files ---
+  { "key": "ctrl+r", "command": "workbench.action.quickOpen" },
+
+  // --- Toggle File/Folder View (Explorer Sidebar) ---
+  { "key": "ctrl+e", "command": "workbench.action.toggleSidebarVisibility" },
+  
+  // Move Terminal
+  { "key": "alt+]", "command": "workbench.action.positionPanelRight" },
+  { "key": "alt+[", "command": "workbench.action.positionPanelBottom" }
+]
