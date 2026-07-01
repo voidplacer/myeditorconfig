@@ -13,7 +13,7 @@
     "vim.useSystemClipboard": true,
     "redhat.telemetry.enabled": false,
     "window.commandCenter": false,
-    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+    "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font",
     "editor.stickyScroll.enabled": false,
     "telemetry.telemetryLevel": "off",
     "workbench.enableExperiments": false,
