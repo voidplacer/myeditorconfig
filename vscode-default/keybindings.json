@@ -77,5 +77,6 @@
   
   // Move Terminal
   { "key": "alt+]", "command": "workbench.action.positionPanelRight" },
-  { "key": "alt+[", "command": "workbench.action.positionPanelBottom" }
+  { "key": "alt+[", "command": "workbench.action.positionPanelBottom" },
+  { "key": "alt+'","command": "workbench.action.terminal.toggleTerminal"}
 ]

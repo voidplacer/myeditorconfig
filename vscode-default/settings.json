@@ -19,7 +19,7 @@
     "workbench.enableExperiments": false,
 
     // Lang Specific
-    "C_Cpp.intelliSenseEngine": "Disabled",
+    // "C_Cpp.intelliSenseEngine": "Disabled",
     "java.jdt.ls.vmargs": "-Xms2G -Xmx5G -XX:+UseG1GC -XX:+UseStringDeduplication",
     // Java CP   /*Comment out/Enable if working in a project*/
     "java.import.gradle.enabled": false,
