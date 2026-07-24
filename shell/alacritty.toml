@@ -1,0 +1,20 @@
+[terminal]
+
+[terminal.shell]
+program = "C:\\Windows\\System32\\wsl.exe"
+args = ["--cd", "~"]
+
+[font]
+size = 12
+
+[font.normal]
+family = "CaskaydiaMono Nerd Font"
+
+[font.bold]
+family = "CaskaydiaMono Nerd Font"
+
+[font.italic]
+family = "CaskaydiaMono Nerd Font"
+
+[font.bold_italic]
+family = "CaskaydiaMono Nerd Font"
