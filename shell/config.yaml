@@ -1,0 +1,6 @@
+# ~/.config/clangd/config.yaml
+CompileFlags:
+  Add:
+    - -std=c++26
+    - -Wall
+    - -Wextra
