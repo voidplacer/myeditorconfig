@@ -44,5 +44,7 @@
     "editor.smoothScrolling": true,
     "workbench.list.smoothScrolling": true,
     "editor.cursorBlinking": "smooth",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "keyboard.dispatch": "keyCode",
+    "git.openRepositoryInParentFolders": "always"
 }
