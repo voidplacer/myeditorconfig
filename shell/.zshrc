@@ -1,6 +1,6 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-plugins=(git dnf zoxide zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zoxide zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 #
@@ -49,7 +49,7 @@ gpp() {
   outfile="/tmp/${basename}_out"
 
   # Compile
-  g++ -std=c++17 "$filename" -o "$outfile"
+  clang++ -std=c++26 "$filename" -o "$outfile"
   if [[ $? -ne 0 ]]; then
     echo "Compilation failed."
     return 1
@@ -77,7 +77,7 @@ cout() {
   outfile="/tmp/${basename}_out"
 
   # Compile
-  clang -std=c17 "$filename" -o "$outfile"
+  clang -std=c23 "$filename" -o "$outfile"
   if [[ $? -ne 0 ]]; then
     echo "Compilation failed."
     return 1
@@ -87,12 +87,7 @@ cout() {
   "$outfile"
 }
 
-alias dev='cd ~/Canvas/'
-alias devjava='cd ~/Canvas/Java/'
-alias devcpp='cd ~/Canvas/cpp/'
 alias restartblue='sudo systemctl restart bluetooth.service'
-alias cd-nvim='cd ~/.config/nvim/lua/'
-
 
 # Cleanup orphaned packages
 alias cleanup='sudo pacman -Rns (pacman -Qtdq)'
@@ -112,6 +107,7 @@ alias lt='eza -aT --color=always --group-directories-first --icons' # tree listi
 alias l.="eza -a | grep -e '^\.'"                                     # show only dotfiles
 
 # Common use
+alias c++='clang++ -std=c++26'
 alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 alias tarnow='tar -acf '
@@ -132,6 +128,5 @@ alias egrep='egrep --color=auto'
 alias hw='hwinfo --short'                                   # Hardware Info
 alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB
 alias gitpkg='pacman -Q | grep -i "\-git" | wc -l'          # List amount of -git packages
-alias update='sudo pacman -Syu'
 
 eval "$(zoxide init --cmd cd zsh)"

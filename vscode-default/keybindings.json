@@ -65,12 +65,11 @@
   },
   { 
     "key": "ctrl+shift+i", 
-    "command": "workbench.action.focusActiveEditorGroup", 
-    "when": "terminalFocus" 
+    "command": "workbench.action.terminal.toggleTerminal", 
   },
 
   // --- Search for files ---
-  { "key": "ctrl+r", "command": "workbench.action.quickOpen" },
+  { "key": "ctrl+/", "command": "workbench.action.quickOpen" },
 
   // --- Toggle File/Folder View (Explorer Sidebar) ---
   { "key": "ctrl+e", "command": "workbench.action.toggleSidebarVisibility" },
@@ -78,5 +77,4 @@
   // Move Terminal
   { "key": "alt+]", "command": "workbench.action.positionPanelRight" },
   { "key": "alt+[", "command": "workbench.action.positionPanelBottom" },
-  { "key": "alt+'","command": "workbench.action.terminal.toggleTerminal"}
 ]
