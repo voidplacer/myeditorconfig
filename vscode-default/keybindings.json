@@ -58,14 +58,21 @@
 
   // --- Terminal focus toggle ---
   // If not in terminal, jump to terminal. If in terminal, jump to code editor.
-  { 
-    "key": "ctrl+shift+i", 
-    "command": "workbench.action.terminal.focus", 
-    "when": "!terminalFocus" 
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
   },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+
+  // Pops terminal on and off after focusing
   { 
-    "key": "ctrl+shift+i", 
-    "command": "workbench.action.terminal.toggleTerminal", 
+    "key": "ctrl+shift+0", 
+    "command": "workbench.action.terminal.toggleTerminal" 
   },
 
   // --- Search for files ---
@@ -76,5 +83,5 @@
   
   // Move Terminal
   { "key": "alt+]", "command": "workbench.action.positionPanelRight" },
-  { "key": "alt+[", "command": "workbench.action.positionPanelBottom" },
+  { "key": "alt+[", "command": "workbench.action.positionPanelBottom" }
 ]
