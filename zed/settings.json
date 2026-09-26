@@ -1,0 +1,56 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "disable_ai": true,
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+  "base_keymap": "Zed",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Catppuccin Mocha"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "tab_size": 2,
+
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "project_panel": {
+      "dock": "right",
+      "starts_open": true
+  },
+  "toolbar": {
+    "breadcrumbs": false
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "buffer_font_family": "CaskaydiaMono Nerd Font",
+
+  "terminal": {
+    "font_family": "CaskaydiaMono Nerd Font"
+  },
+  "file_scan_exclusions": [
+    "**/.git/objects/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.cache/**",
+    "**/target/**"
+  ]
+}

@@ -1,15 +1,118 @@
-// Append the following lines in the end
-
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
 [
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "ctrl-shift-t": "workspace::NewCenterTerminal",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+  },
+  // ─────────────────────────────────────────────
+  // Move between splits
+  // ─────────────────────────────────────────────
   {
     "bindings": {
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
-      "ctrl-shift-i": "workspace::NewCenterTerminal",
-      "alt-enter": "pane::SplitHorizontal",
-      "alt-\\": "pane::SplitVertical",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // Resize splits
+  // ─────────────────────────────────────────────
+  {
+    "bindings": {
+      "alt-h": "vim::ResizePaneLeft",
+      "alt-l": "vim::ResizePaneRight",
+      "alt-k": "vim::ResizePaneUp",
+      "alt-j": "vim::ResizePaneDown",
+    },
+  },
+  // ─────────────────────────────────────────────
+  // Previous / next tab
+  // ─────────────────────────────────────────────
+  {
+    "bindings": {
+      "ctrl-shift-h": "pane::ActivatePreviousItem",
+      "ctrl-shift-l": "pane::ActivateNextItem",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // Create splits
+  // ─────────────────────────────────────────────
+  {
+    "bindings": {
+      "alt-\\": "pane::SplitRight",
+      "alt-enter": "pane::SplitDown",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // New tab / close tab
+  // ─────────────────────────────────────────────
+  {
+    "bindings": {
+      "ctrl-t": "workspace::NewFile",
+      "ctrl-w": "pane::CloseActiveItem",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // Terminal focus toggle
+  //
+  // Ctrl+0:
+  //   Editor → terminal
+  //   Terminal → editor
+  // ─────────────────────────────────────────────
+  {
+    "context": "!Terminal",
+    "bindings": {
+      "ctrl-0": "terminal_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-0": "editor::ToggleFocus",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // Toggle terminal panel
+  // ─────────────────────────────────────────────
+  {
+    "bindings": {
+      "ctrl-9": "terminal_panel::Toggle",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // File search
+  // ─────────────────────────────────────────────
+  {
+    "bindings": {
+      "ctrl-/": "file_finder::Toggle",
+    },
+  },
+
+  // ─────────────────────────────────────────────
+  // Toggle Explorer / Project sidebar
+  // ─────────────────────────────────────────────
+  {
+    "bindings": {
+      "ctrl-e": "project_panel::Toggle",
     },
   },
 ]
