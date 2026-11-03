@@ -1,0 +1,23 @@
+# Shared baseline for Zed, JetBrains, clangd, and other EditorConfig-aware tools.
+root = false
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+tab_width = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.go]
+# gofmt requires tabs in Go source; display each tab as two columns.
+indent_style = tab
+indent_size = 2
+tab_width = 2
+
+[Makefile]
+indent_style = tab
+
+[*.mk]
+indent_style = tab

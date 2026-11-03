@@ -1,0 +1,121 @@
+<keymap version="1" name="Voidplacer Zed Vim" parent="$default">
+  <!-- Give Zed-style keys priority over inherited JetBrains defaults. -->
+  <action id="RecentFiles" />
+  <action id="SwitcherRecentEditedChangedToggleCheckBox" />
+  <action id="SwitcherIterateItems" />
+  <action id="EditorSelectWord" />
+  <action id="UsageFiltering.WriteAccess" />
+  <action id="CommentByLineComment" />
+  <action id="GotoBookmark0" />
+  <action id="GotoBookmark9" />
+  <action id="GotoTest" />
+  <action id="ServiceView.ShowServices" />
+  <action id="MethodHierarchy" />
+  <action id="FindPrevious" />
+  <!-- Release inherited Ctrl+h/j/l actions before assigning pane navigation. -->
+  <action id="TypeHierarchy" />
+  <action id="InsertLiveTemplate" />
+  <action id="FindNext" />
+  <action id="ShowIntentionActions">
+    <keyboard-shortcut first-keystroke="control PERIOD" />
+  </action>
+  <action id="SelectNextOccurrence" />
+  <action id="MainMenuButton.ShowMenu" />
+  <!-- Ctrl+plus/minus changes code-editor text only, never the IDE UI. -->
+  <action id="ExpandAll" />
+  <action id="ExpandExpandableComponent" />
+  <action id="ExpandRegion" />
+  <action id="ExpandAllRegions" />
+  <action id="CollapseAll" />
+  <action id="CollapseExpandableComponent" />
+  <action id="CollapseRegion" />
+  <action id="CollapseAllRegions" />
+  <action id="ZoomInIdeAction" />
+  <action id="ZoomOutIdeAction" />
+  <action id="EditorIncreaseFontSizeGlobal">
+    <keyboard-shortcut first-keystroke="control EQUALS" />
+    <keyboard-shortcut first-keystroke="control shift EQUALS" />
+    <keyboard-shortcut first-keystroke="control ADD" />
+  </action>
+  <action id="EditorDecreaseFontSizeGlobal">
+    <keyboard-shortcut first-keystroke="control MINUS" />
+    <keyboard-shortcut first-keystroke="control SUBTRACT" />
+  </action>
+
+  <action id="Voidplacer.NavigateLeft"><keyboard-shortcut first-keystroke="control H" /></action>
+  <action id="Voidplacer.NavigateDown"><keyboard-shortcut first-keystroke="control J" /></action>
+  <action id="Voidplacer.NavigateUp"><keyboard-shortcut first-keystroke="control K" /></action>
+  <action id="Voidplacer.NavigateRight"><keyboard-shortcut first-keystroke="control L" /></action>
+  <action id="Voidplacer.MoveRight"><keyboard-shortcut first-keystroke="alt CLOSE_BRACKET" /></action>
+  <action id="Voidplacer.MoveBottom"><keyboard-shortcut first-keystroke="alt OPEN_BRACKET" /></action>
+
+  <action id="Run"><keyboard-shortcut first-keystroke="shift F10" /></action>
+  <action id="Debug"><keyboard-shortcut first-keystroke="shift F9" /></action>
+  <action id="StepOut" />
+  <action id="ShowBookmarks" />
+  <action id="ActivateProblemsViewToolWindow"><keyboard-shortcut first-keystroke="shift F11" /></action>
+
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="control E" />
+  </action>
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="control SLASH" />
+  </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="control 9" />
+  </action>
+  <action id="JumpToLastWindow">
+    <keyboard-shortcut first-keystroke="control 0" />
+  </action>
+  <action id="Terminal.NewTab">
+    <keyboard-shortcut first-keystroke="control shift T" />
+  </action>
+  <action id="NewFile">
+    <keyboard-shortcut first-keystroke="control T" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="control W" />
+  </action>
+  <action id="PreviousEditorTab">
+    <keyboard-shortcut first-keystroke="control shift H" />
+  </action>
+  <action id="NextEditorTab">
+    <keyboard-shortcut first-keystroke="control shift L" />
+  </action>
+  <action id="SplitVertically">
+    <keyboard-shortcut first-keystroke="alt BACK_SLASH" />
+  </action>
+  <action id="SplitHorizontally">
+    <keyboard-shortcut first-keystroke="alt ENTER" />
+  </action>
+  <action id="StretchSplitToLeft">
+    <keyboard-shortcut first-keystroke="alt H" />
+  </action>
+  <action id="StretchSplitToBottom">
+    <keyboard-shortcut first-keystroke="alt J" />
+  </action>
+  <action id="StretchSplitToTop">
+    <keyboard-shortcut first-keystroke="alt K" />
+  </action>
+  <action id="StretchSplitToRight">
+    <keyboard-shortcut first-keystroke="alt L" />
+  </action>
+
+  <!-- Alt+1..9 select editor tabs, as in kitty and tmux. -->
+  <action id="ActivateBookmarksToolWindow" />
+  <action id="ActivateFindToolWindow" />
+  <action id="ActivateRunToolWindow" />
+  <action id="ActivateDebugToolWindow" />
+  <action id="ActivateStructureToolWindow" />
+  <action id="ActivateServicesToolWindow" />
+  <action id="ActivateVersionControlToolWindow" />
+  <action id="GoToTab1"><keyboard-shortcut first-keystroke="alt 1" /></action>
+  <action id="GoToTab2"><keyboard-shortcut first-keystroke="alt 2" /></action>
+  <action id="GoToTab3"><keyboard-shortcut first-keystroke="alt 3" /></action>
+  <action id="GoToTab4"><keyboard-shortcut first-keystroke="alt 4" /></action>
+  <action id="GoToTab5"><keyboard-shortcut first-keystroke="alt 5" /></action>
+  <action id="GoToTab6"><keyboard-shortcut first-keystroke="alt 6" /></action>
+  <action id="GoToTab7"><keyboard-shortcut first-keystroke="alt 7" /></action>
+  <action id="GoToTab8"><keyboard-shortcut first-keystroke="alt 8" /></action>
+  <action id="GoToTab9"><keyboard-shortcut first-keystroke="alt 9" /></action>
+</keymap>

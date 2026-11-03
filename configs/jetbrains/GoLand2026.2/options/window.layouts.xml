@@ -1,0 +1,96 @@
+<application>
+  <component name="ToolWindowLayout"><![CDATA[{
+  "layouts": {
+    "Custom": {
+      "v2": [
+        {
+          "id": "Project",
+          "order": 0,
+          "contentUiType": "COMBO",
+          "weight": 0.25,
+          "anchor": "RIGHT",
+          "isSplit": false
+        },
+        {
+          "id": "Commit",
+          "order": 0,
+          "weight": 0.25,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Structure",
+          "order": 1,
+          "weight": 0.25,
+          "isSplit": true,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Notifications",
+          "order": 2,
+          "anchor": "LEFT",
+          "contentUiType": "COMBO",
+          "weight": 0.25
+        },
+        {
+          "id": "AIAssistant",
+          "order": 3,
+          "anchor": "LEFT",
+          "weight": 0.25
+        },
+        {
+          "id": "Database",
+          "order": 4,
+          "anchor": "LEFT",
+          "weight": 0.25
+        },
+        {
+          "id": "Gradle",
+          "order": 5,
+          "anchor": "LEFT",
+          "weight": 0.25
+        },
+        {
+          "id": "Maven",
+          "order": 6,
+          "anchor": "LEFT",
+          "weight": 0.25
+        },
+        {
+          "id": "Version Control",
+          "order": 7,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Problems",
+          "order": 3,
+          "anchor": "RIGHT",
+          "isSplit": false
+        },
+        {
+          "id": "Problems View",
+          "order": 4,
+          "anchor": "RIGHT",
+          "isSplit": false
+        },
+        {
+          "id": "Terminal",
+          "order": 1,
+          "anchor": "RIGHT",
+          "isSplit": false
+        },
+        {
+          "id": "Services",
+          "order": 8,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Run",
+          "anchor": "RIGHT",
+          "order": 2,
+          "isSplit": false
+        }
+      ]
+    }
+  }
+}]]></component>
+</application>

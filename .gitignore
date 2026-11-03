@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.class
+.env
+.env.*
+!.env.example
+editor_backup/
+backups/
+.cache/
+.venv/
+plugins/**/build/
+dist/
+*.tar.gz
+*.zip

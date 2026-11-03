@@ -1,0 +1,7 @@
+# clangd and CLion use this for C/C++ files under the home directory.
+BasedOnStyle: LLVM
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ContinuationIndentWidth: 4
+ColumnLimit: 0

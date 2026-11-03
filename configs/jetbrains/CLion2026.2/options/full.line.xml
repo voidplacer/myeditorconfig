@@ -1,0 +1,17 @@
+<application>
+  <component name="InlineShortcutChoice">
+    <option name="choiceShownTimes" value="27" />
+  </component>
+  <component name="MLServerCompletionSettings">
+    <option name="languageGroupToEnabled">
+      <map>
+        <entry key="css" value="false" />
+        <entry key="html" value="false" />
+        <entry key="javascript.typescript" value="false" />
+        <entry key="python" value="false" />
+        <entry key="rider-cpp" value="false" />
+        <entry key="rust" value="false" />
+      </map>
+    </option>
+  </component>
+</application>

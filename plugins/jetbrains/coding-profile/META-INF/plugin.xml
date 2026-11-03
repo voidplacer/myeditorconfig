@@ -1,0 +1,16 @@
+<idea-plugin>
+  <id>voidplacer.coding.profile</id>
+  <name>Voidplacer Coding Profile</name>
+  <vendor>Voidplacer</vendor>
+  <version>1.0.3</version>
+  <idea-version since-build="262" />
+  <depends>com.intellij.modules.platform</depends>
+  <actions>
+    <action id="Voidplacer.NavigateLeft" class="voidplacer.ProfileActions$Left" text="Focus Pane Left" />
+    <action id="Voidplacer.NavigateDown" class="voidplacer.ProfileActions$Down" text="Focus Pane Down" />
+    <action id="Voidplacer.NavigateUp" class="voidplacer.ProfileActions$Up" text="Focus Pane Up" />
+    <action id="Voidplacer.NavigateRight" class="voidplacer.ProfileActions$Right" text="Focus Pane Right" />
+    <action id="Voidplacer.MoveRight" class="voidplacer.ProfileActions$MoveRight" text="Move Tool Window Right" />
+    <action id="Voidplacer.MoveBottom" class="voidplacer.ProfileActions$MoveBottom" text="Move Tool Window Bottom" />
+  </actions>
+</idea-plugin>

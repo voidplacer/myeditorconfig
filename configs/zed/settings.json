@@ -1,0 +1,74 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "auto_update": true,
+  "cli_default_open_behavior": "existing_window",
+  "disable_ai": true,
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+  "base_keymap": "Zed",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Catppuccin Mocha"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "format_on_save": "on",
+  "auto_indent": "syntax_aware",
+  "hard_tabs": false,
+  "show_completions_on_input": true,
+  "show_completion_documentation": true,
+  "auto_signature_help": true,
+  "show_signature_help_after_edits": true,
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+  "tab_size": 2,
+
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "project_panel": {
+      "dock": "right",
+      "starts_open": true
+  },
+  "toolbar": {
+    "breadcrumbs": false
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "buffer_font_family": "CaskaydiaMono Nerd Font",
+
+  "terminal": {
+    "font_family": "CaskaydiaMono Nerd Font"
+  },
+  "file_scan_exclusions": [
+    "**/.git/objects/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.cache/**",
+    "**/target/**"
+  ],
+  "languages": {
+    "Go": {
+      "tab_size": 2,
+      "hard_tabs": true,
+      "format_on_save": "on"
+    },
+    "Java": {
+      "enable_language_server": true
+    }
+  }
+}

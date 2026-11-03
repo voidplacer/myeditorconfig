@@ -1,0 +1,106 @@
+<application>
+  <component name="ToolWindowLayout"><![CDATA[{
+  "layouts": {
+    "Custom": {
+      "v2": [
+        {
+          "id": "Commit",
+          "order": 0,
+          "weight": 0.25,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Structure",
+          "order": 1,
+          "weight": 0.25,
+          "isSplit": true,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Version Control",
+          "order": 2,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Problems",
+          "order": 3,
+          "anchor": "RIGHT",
+          "isSplit": false
+        },
+        {
+          "id": "Problems View",
+          "order": 4,
+          "anchor": "RIGHT",
+          "isSplit": false
+        },
+        {
+          "id": "Terminal",
+          "order": 1,
+          "anchor": "RIGHT",
+          "isSplit": false
+        },
+        {
+          "id": "Services",
+          "order": 3,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "CMake",
+          "order": 4,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Project",
+          "order": 0,
+          "anchor": "RIGHT",
+          "contentUiType": "COMBO",
+          "weight": 0.25,
+          "isSplit": false
+        },
+        {
+          "id": "Notifications",
+          "order": 5,
+          "anchor": "LEFT",
+          "contentUiType": "COMBO",
+          "weight": 0.25
+        },
+        {
+          "id": "AIAssistant",
+          "order": 6,
+          "anchor": "LEFT",
+          "weight": 0.25
+        },
+        {
+          "id": "Database",
+          "order": 7,
+          "anchor": "LEFT",
+          "weight": 0.25
+        },
+        {
+          "id": "Gradle",
+          "order": 8,
+          "anchor": "LEFT",
+          "weight": 0.25
+        },
+        {
+          "id": "Maven",
+          "order": 9,
+          "anchor": "LEFT",
+          "weight": 0.25
+        },
+        {
+          "id": "Meson",
+          "order": 10,
+          "anchor": "LEFT"
+        },
+        {
+          "id": "Run",
+          "anchor": "RIGHT",
+          "order": 2,
+          "isSplit": false
+        }
+      ]
+    }
+  }
+}]]></component>
+</application>

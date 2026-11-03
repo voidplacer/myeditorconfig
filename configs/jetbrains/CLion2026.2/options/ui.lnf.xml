@@ -1,0 +1,13 @@
+<application>
+  <component name="UISettings">
+    <option name="fontSize" value="13" />
+    <option name="editorTabPlacement" value="3" />
+    <option name="compactMode" value="true" />
+    <option name="compactTreeIndents" value="true" />
+    <option name="useSmallLabelsOnTabs" value="true" />
+    <option name="showNavigationBar" value="false" />
+    <option name="showMainToolbar" value="false" />
+    <option name="showNewMainToolbar" value="false" />
+    <option name="showStatusBar" value="true" />
+  </component>
+</application>

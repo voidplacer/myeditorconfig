@@ -1,0 +1,15 @@
+<application>
+  <component name="CloudCompletionState">
+    <languageToEnabled>
+      <entry language="html" enabled="false" />
+      <entry language="javascript.typescript" enabled="false" />
+      <entry language="go" enabled="false" />
+      <entry language="css" enabled="false" />
+      <entry language="xml" enabled="false" />
+      <entry language="yaml" enabled="false" />
+      <entry language="json" enabled="false" />
+      <entry language="markdown" enabled="false" />
+    </languageToEnabled>
+    <option name="universalEnabled" value="false" />
+  </component>
+</application>

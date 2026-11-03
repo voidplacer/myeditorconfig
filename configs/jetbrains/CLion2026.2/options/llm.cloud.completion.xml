@@ -1,0 +1,18 @@
+<application>
+  <component name="CloudCompletionState">
+    <languageToEnabled>
+      <entry language="html" enabled="false" />
+      <entry language="rider-cpp" enabled="false" />
+      <entry language="python" enabled="false" />
+      <entry language="rust" enabled="false" />
+      <entry language="javascript.typescript" enabled="false" />
+      <entry language="css" enabled="false" />
+      <entry language="xml" enabled="false" />
+      <entry language="yaml" enabled="false" />
+      <entry language="json" enabled="false" />
+      <entry language="markdown" enabled="false" />
+      <entry language="text" enabled="false" />
+    </languageToEnabled>
+    <option name="universalEnabled" value="false" />
+  </component>
+</application>

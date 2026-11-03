@@ -1,0 +1,6 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="13.0" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+</application>

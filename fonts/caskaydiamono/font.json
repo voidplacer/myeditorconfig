@@ -1,0 +1,12 @@
+{
+  "name": "CaskaydiaMono Nerd Font",
+  "linux": {
+    "provider": "github-release",
+    "repository": "ryanoasis/nerd-fonts",
+    "asset": "CascadiaMono.tar.xz"
+  },
+  "macos": {
+    "provider": "homebrew-cask",
+    "package": "font-caskaydia-mono-nerd-font"
+  }
+}

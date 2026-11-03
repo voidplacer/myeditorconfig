@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "applications": [
+    {
+      "id": "kitty",
+      "name": "kitty",
+      "prefix": "configs/kitty",
+      "destination": "{config}/kitty",
+      "packages": {
+        "ubuntu": "kitty",
+        "fedora": "kitty",
+        "arch": "kitty",
+        "macos": "kitty"
+      },
+      "cask": true
+    },
+    {
+      "id": "tmux",
+      "name": "tmux",
+      "prefix": "configs/tmux",
+      "mappings": {
+        "tmux.conf": "{home}/.tmux.conf"
+      },
+      "packages": {
+        "ubuntu": "tmux",
+        "fedora": "tmux",
+        "arch": "tmux",
+        "macos": "tmux"
+      }
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "prefix": "configs/zed",
+      "destination": "{config}/zed",
+      "packages": {
+        "ubuntu": "zed",
+        "fedora": "zed",
+        "arch": "zed",
+        "macos": "zed"
+      },
+      "aur": "zed-bin",
+      "vendor": "zed",
+      "cask": true
+    },
+    {
+      "id": "nvim",
+      "name": "Neovim / LazyVim",
+      "description": "Space selects Neovim and reveals optional language extras; Right only expands them. No extras are added unless checked. Existing extras and ~/.clang-format are preserved.",
+      "prefix": "configs/nvim",
+      "handler": "nvim"
+    },
+    {
+      "id": "nvim-clangd",
+      "name": "C/C++ support (clangd)",
+      "description": "Optional LazyVim lang.clangd extra and distro/Homebrew clangd tools. Selecting this also selects Neovim; leaving it unchecked does not enable it.",
+      "handler": "nvim-extra",
+      "parent": "nvim",
+      "module": "lang.clangd",
+      "dependencies": {
+        "ubuntu": ["clangd"],
+        "fedora": ["clang-tools-extra"],
+        "arch": ["clang"],
+        "macos": ["llvm"]
+      }
+    },
+    {
+      "id": "nvim-java",
+      "name": "Java support",
+      "description": "Optional LazyVim lang.java extra. Reuse an equal/newer JDK, or install the newest available LTS JDK from the distro/Homebrew. Unchecked extras are not enabled.",
+      "handler": "nvim-extra",
+      "parent": "nvim",
+      "module": "lang.java",
+      "requires_jdk": true,
+      "dependencies": {
+        "ubuntu": [],
+        "fedora": [],
+        "arch": [],
+        "macos": []
+      }
+    },
+    {
+      "id": "vscode",
+      "name": "VS Code",
+      "prefix": "configs/vscode",
+      "destination": "{config}/Code/User",
+      "macos_destination": "{home}/Library/Application Support/Code/User",
+      "packages": {
+        "ubuntu": "code",
+        "fedora": "code",
+        "arch": "visual-studio-code-bin",
+        "macos": "visual-studio-code"
+      },
+      "aur": "visual-studio-code-bin",
+      "vendor": "vscode",
+      "cask": true
+    },
+    {
+      "id": "clion",
+      "name": "CLion",
+      "prefix": "configs/jetbrains/CLion2026.2",
+      "handler": "jetbrains",
+      "packages": {
+        "ubuntu": "clion",
+        "fedora": "clion",
+        "arch": "clion",
+        "macos": "clion"
+      },
+      "aur": "clion",
+      "vendor": "clion",
+      "cask": true
+    },
+    {
+      "id": "goland",
+      "name": "GoLand",
+      "prefix": "configs/jetbrains/GoLand2026.2",
+      "handler": "jetbrains",
+      "packages": {
+        "ubuntu": "goland",
+        "fedora": "goland",
+        "arch": "goland",
+        "macos": "goland"
+      },
+      "aur": "goland-bin",
+      "vendor": "goland",
+      "cask": true
+    },
+    {
+      "id": "alacritty",
+      "name": "Alacritty",
+      "prefix": "configs/alacritty",
+      "destination": "{config}/alacritty",
+      "packages": {
+        "ubuntu": "alacritty",
+        "fedora": "alacritty",
+        "arch": "alacritty",
+        "macos": "alacritty"
+      },
+      "cask": true
+    },
+    {
+      "id": "zsh",
+      "name": "Zsh shell config (append)",
+      "prefix": "configs/shell",
+      "destination": "{home}",
+      "packages": {
+        "ubuntu": "zsh",
+        "fedora": "zsh",
+        "arch": "zsh",
+        "macos": "zsh"
+      },
+      "dependencies": {
+        "ubuntu": [
+          "zoxide",
+          "eza"
+        ],
+        "fedora": [
+          "zoxide",
+          "eza"
+        ],
+        "arch": [
+          "zoxide",
+          "eza"
+        ],
+        "macos": [
+          "zoxide",
+          "eza"
+        ]
+      },
+      "handler": "shell"
+    },
+    {
+      "id": "bash",
+      "name": "Bash shell config (append)",
+      "prefix": "configs/shell",
+      "destination": "{home}",
+      "packages": {
+        "ubuntu": "bash",
+        "fedora": "bash",
+        "arch": "bash",
+        "macos": "bash"
+      },
+      "dependencies": {
+        "ubuntu": ["zoxide", "eza"],
+        "fedora": ["zoxide", "eza"],
+        "arch": ["zoxide", "eza"],
+        "macos": ["zoxide", "eza"]
+      },
+      "handler": "shell"
+    },
+    {
+      "id": "clangd",
+      "name": "clangd",
+      "prefix": "configs/clangd",
+      "destination": "{config}/clangd",
+      "packages": {
+        "ubuntu": "clangd",
+        "fedora": "clang-tools-extra",
+        "arch": "clang",
+        "macos": "llvm"
+      }
+    },
+    {
+      "id": "formatting",
+      "name": "Shared formatting (LLVM)",
+      "description": "Apply LLVM-style ~/.clang-format and shared EditorConfig. Selecting this unchecks Allman, not Neovim.",
+      "exclusive_group": "clang-format",
+      "prefix": "configs/formatting",
+      "destination": "{home}",
+      "handler": "files"
+    },
+    {
+      "id": "formatting-allman",
+      "name": "C/C++ formatting (Allman)",
+      "description": "Apply the original Neovim Allman preference to ~/.clang-format. Selecting this unchecks LLVM, not Neovim.",
+      "exclusive_group": "clang-format",
+      "prefix": "configs/formatting-allman",
+      "destination": "{home}",
+      "handler": "files"
+    },
+    {
+      "id": "ideavim",
+      "name": "Standalone IdeaVim config",
+      "prefix": "configs/ideavim",
+      "destination": "{home}",
+      "handler": "files"
+    }
+  ]
+}

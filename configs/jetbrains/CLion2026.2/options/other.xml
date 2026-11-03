@@ -1,0 +1,12 @@
+<application>
+  <component name="NotRoamableUiSettings">
+    <option name="fontSize" value="13.0" />
+    <option name="overrideLafFonts" value="true" />
+  </component>
+  <component name="PropertyService">{
+    &quot;keyToString&quot;: {
+      &quot;cmake.build.toolwindow.showAlways&quot;: &quot;false&quot;,
+      &quot;cmake.build.toolwindow.showOnlyOnWarning&quot;: &quot;true&quot;
+    }
+  }</component>
+</application>
